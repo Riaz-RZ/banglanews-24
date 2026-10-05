@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 interface Inews {
     id: string,
@@ -18,7 +19,9 @@ const MostRead = async () => {
 
                 <div className="p-1.5 flex" key={n.id}>
                     <p className="text-red-500 me-2 font-bold">{n.rank}</p>
-                    <h2 className="font-bold">{n.title}</h2>
+                    <Link href={`/news/${n.id}`}>
+                        <h2 className="font-bold">{n.title}</h2>
+                    </Link>
                 </div>
 
             )}

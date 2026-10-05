@@ -1,7 +1,6 @@
 import MainNews from "@/components/MainNews";
-import Marquee from "@/components/Marquee";
 import MostRead from "@/components/MostRead";
-import OtherNewsCard from "@/components/otherNewsCard";
+import OtherNewsCard from "@/components/OtherNewsCard";
 
 
 interface IotherSections {
@@ -28,8 +27,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Marquee />
-      <div className="grid grid-cols-3 max-w-7xl mx-auto">
+      <div className="grid grid-cols-3">
 
         {/* main news section */}
         <div className="col-span-2">
